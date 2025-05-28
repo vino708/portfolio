@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0c0c0c;
+  color: white;
+}
+
+.contact-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: all 1s ease;
+}
+
+.contact-wrapper.show {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.contact-card {
+  background: linear-gradient(145deg, #1e1e1e, #111);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 50px;
+  color: #00f0ff;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.form-field {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.8s ease forwards;
+}
+
+.from-left {
+  animation-delay: 0.3s;
+  transform: translateX(-50px);
+}
+
+.from-right {
+  animation-delay: 0.6s;
+  transform: translateX(50px);
+}
+
+.from-bottom {
+  animation-delay: 0.9s;
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.submit-btn {
+  background-color: orange;
+  color: #000;
+  font-size: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.submit-btn:hover {
+  background-color: orange;
+  transform: scale(1.05);
+}
+
+.pulse-glow {
+  box-shadow: 0 0 10px orange, 0 0 20px orange;
+  animation: glowPulse 2s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px orange, 0 0 20px orange;
+  }
+  50% {
+    box-shadow: 0 0 15px orange, 0 0 25px orange;
+  }
+  100% {
+    box-shadow: 0 0 10px orange, 0 0 20px orange;
+  }
+}

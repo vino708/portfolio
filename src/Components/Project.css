@@ -1,0 +1,132 @@
+.projects-section {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, border 0.3s;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid orange;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #ffa500;
+  font-size: 20px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 10px 0 15px;
+}
+
+.tech-tags {
+  margin-bottom: 12px;
+}
+
+.tag {
+  background-color: #222;
+  border: 1px solid orange;
+  color: orange;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 0 5px 5px 0;
+  display: inline-block;
+}
+
+.view-link {
+  font-size: 14px;
+  color: orange;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  border: 1px solid orange;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+  text-align: left;
+}
+
+.modal-content h3 {
+  color: #ffa500;
+  margin-top: 0;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  color: orange;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.project-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

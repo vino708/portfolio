@@ -1,0 +1,206 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.animated-text {
+  min-height: 100px; /* or height: 100px for more control */
+  white-space: pre-line; /* allow \n in Typed to break lines */
+  overflow: hidden;
+}
+
+/* Optional: prevent image shaking on resize or reflow */
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.homepage {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+  transition: background 1s ease-in-out;
+}
+
+/* Container for side-by-side layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 40px 0;
+}
+
+.left-content {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: float 6s ease-in-out infinite;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Background gradient classes */
+
+
+/* Your animated text */
+.animated-text {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffffff, orange, #ffffff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s infinite, fadeInUp 2s ease forwards;
+  opacity: 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 1;
+  line-height: 1.2;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hire Me button styling */
+.hire-me-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: orange;
+  background: transparent;
+  border: 2px solid orange;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards 2s;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.hire-me-btn:hover {
+  background-color: orange;
+  color: #000;
+}
+
+/* Social icons container */
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards 3.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.social-icons a {
+  color: #00c3ff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0099cc;
+  transform: translateY(-5px);
+}
+
+/* Fade in keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .left-content {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .right-content {
+    margin-top: 40px;
+  }
+
+  .animated-text {
+    font-size: 2.5rem;
+  }
+
+  .profile-image {
+    max-height: 50vh;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
