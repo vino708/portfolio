@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee4ef7fa.css",
+    "main.js": "/static/js/main.4bfe6b3b.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/Vino PNG.png": "/static/media/Vino PNG.fa2bd9719158db372ca2.png",
+    "static/media/home2.png": "/static/media/home2.6fcaafec597de904dbf2.png",
+    "index.html": "/index.html",
+    "main.ee4ef7fa.css.map": "/static/css/main.ee4ef7fa.css.map",
+    "main.4bfe6b3b.js.map": "/static/js/main.4bfe6b3b.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee4ef7fa.css",
+    "static/js/main.4bfe6b3b.js"
+  ]
+}
