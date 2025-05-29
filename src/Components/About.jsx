@@ -69,13 +69,13 @@ const About = () => {
               </div>
             </div>
 
-            {/* Resume Download Button Below Circle */}
+            {/* Resume View Button Below Circle */}
             <a 
               href="/Vino_Resume.pdf" 
-              download 
               target="_blank" 
               rel="noopener noreferrer" 
               className="resume-btn"
+              download
             >
               Download Resume
             </a>

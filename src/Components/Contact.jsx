@@ -27,7 +27,7 @@ function ContactPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "YOUR_ACCESS_KEY_HERE",
+          access_key: "ddca545a-b355-4489-864f-9eec1d38281f",
           subject: "✅ New form submitted on the portfolio website",
           from_name: "Vino Portfolio Website",
           name: formData.name,
