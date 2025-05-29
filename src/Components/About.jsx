@@ -4,13 +4,6 @@ import { FaCode, FaPaintBrush, FaMobileAlt, FaLaptopCode } from 'react-icons/fa'
 
 const About = () => {
 
-  const handleDownloadCV = () => {
-        // Replace 'resume.pdf' with the actual path to your resume file in the public folder
-        const link = document.createElement('a');
-        link.href = '/Vino_Resume.pdf';
-        link.download = 'ShajaiSJ_Resume.pdf';
-        link.click();
-    };
   return (
     <section id='about'>
       <div className="about-section">
@@ -78,7 +71,15 @@ const About = () => {
             </div>
 
             {/* Resume View Button Below Circle */}
-            <button onClick={ handleDownloadCV}>Download</button>
+            <a 
+              href="/Vino_Resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="resume-btn"
+              download
+            >
+              Download Resume
+            </a>
           </div>
         </div>
       </div>
