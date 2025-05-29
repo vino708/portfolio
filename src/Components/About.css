@@ -122,6 +122,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     padding: 3rem 1rem;
+    margin-top: -5%;
   }
 
   .about-left,
@@ -146,6 +147,9 @@ body, html {
   .inner-circle {
     width: 80px;
     height: 80px;
+  }
+  .custom-card{
+    margin-left: 5%;
   }
 }
 .about-right {
@@ -176,4 +180,6 @@ body, html {
   background-color: darkorange;
   transform: translateY(-2px);
 }
+
+
 

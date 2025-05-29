@@ -50,3 +50,14 @@
   border-top: 1px solid #fb923c; /* border-orange-400 */
   padding-top: 1rem;
 }
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: orange; /* or any hover color */
+  text-decoration: underline;
+}
+

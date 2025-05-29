@@ -10,25 +10,25 @@ const Projects = () => {
     {
       title: 'Homiefix Web App',
       description: 'A full-stack service platform for home maintenance, featuring live booking, real-time tracking, and admin dashboard.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express'],
+      tech:  ['HTML', 'CSS', 'JavaScript', 'React JS'],
       details: 'This web app includes real-time booking, provider tracking, and an admin dashboard with analytics. Designed with MERN stack for high performance and scalability. It provides role-based dashboards for users, service providers, and administrators, ensuring a seamless maintenance service experience.',
     },
     {
       title: 'Homiefix Static Website',
       description: 'A fast, SEO-optimized static landing page for Homiefix. Features modern design, contact form, and animations.',
-      tech: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
+      tech: ['HTML', 'CSS', 'JavaScript', 'React JS'],
       details: 'This static website serves as a visually appealing landing page for Homiefix. It uses GSAP for scroll-triggered animations and smooth interactions. Designed with SEO best practices, it includes a fully responsive layout, animated hero section, and a functional contact form to generate leads effectively.',
     },
     {
       title: 'Solar Static Website',
       description: 'Promotes solar energy solutions with animated visuals and smooth parallax scrolling for better engagement.',
-      tech: ['HTML', 'CSS', 'Parallax', 'AOS'],
+      tech: ['HTML', 'CSS', 'JavaScript', 'React JS'],
       details: 'A story-driven layout that uses AOS and parallax effects to highlight the benefits of solar energy. With a focus on storytelling, the design uses layered visuals, animations, and smooth transitions to capture user attention and promote sustainable energy initiatives.',
     },
     {
       title: 'CyberArcadia Static Website',
       description: 'Futuristic cyber-themed site with glitch animations, custom SVGs, and pixel fonts for a retro feel.',
-      tech: ['HTML', 'CSS', 'Glitch', 'SVG'],
+      tech:  ['HTML', 'CSS', 'JavaScript', 'React JS'],
       details: 'CyberArcadia is a visually bold, cyberpunk-style website that blends retro design with modern web techniques. Features glitch animations, animated SVG elements, pixelated fonts, and dynamic hover effects. Perfect for gaming or digital art portfolios seeking a unique, immersive aesthetic.',
     },
   ];

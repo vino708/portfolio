@@ -111,3 +111,48 @@ body {
     box-shadow: 0 0 10px orange, 0 0 20px orange;
   }
 }
+
+.form-status-banner {
+  margin: 15px 0;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+/* Show the banner */
+.contact-wrapper.show .form-status-banner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Success styling */
+.form-status-banner.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Error styling */
+.form-status-banner.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hover effect: lighten background */
+.form-status-banner.hovered.success {
+  background-color: #66bb6a;
+  box-shadow: 0 0 8px #66bb6a;
+  cursor: pointer;
+}
+
+.form-status-banner.hovered.error {
+  background-color: #e57373;
+  box-shadow: 0 0 8px #e57373;
+  cursor: pointer;
+}
+
