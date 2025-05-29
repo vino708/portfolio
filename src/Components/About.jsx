@@ -11,28 +11,30 @@ const About = () => {
           <h2>About Me</h2>
           <h3>Frontend Developer</h3>
 
-          <div className="card-container">
-            <div className="info-card">
-              <h4>Summary</h4>
-              <p>I build responsive and engaging interfaces. Passionate about clean code and UX. Experienced in React, Tailwind, and more.</p>
-            </div>
+          <div className="info-card">
+            <h4>Education</h4>
+            <ul>
+              <li><strong>B.E Mechanical Engineering</strong> – st xavier's catholic college of engineering (2018 - 2021)</li>
+              <li><strong>High School</strong> – Adline matric higher secondary school (2016 - 2018)</li>
+            </ul>
+            <br />
+            <h4>Experience</h4>
+            <ul>
+              <li><strong>Frontend Developer</strong> – Working (2025 - Present)</li>
+              <li>Gained 6 months of hands-on experience building responsive and interactive user interfaces using React.js and Tailwind CSS.</li>
+              <li>Created landing pages, UI components, and interactive sections like resume, contact forms, and project galleries.</li>
+            </ul>
+            <br />
+            <h4>Personal Details</h4>
+            <ul>
+              <li><strong>Name:</strong> Vino</li>
+              <li><strong>Age:</strong> 24</li>
+              <li><strong>Address:</strong>6/100c,cherrupancodu,karankadu(post),kaniya kumari distric - 629809</li>
+            </ul>
 
-            <div className="info-card">
-              <h4>Name</h4>
-              <p>Vino</p>
-            </div>
-
-            <div className="info-card">
-              <h4>Age</h4>
-              <p>24</p>
-            </div>
-
-            <div className="info-card">
-              <h4>Hobby</h4>
-              <p>UI Animations</p>
-            </div>
           </div>
         </div>
+
 
         {/* Right Side - Rotating Circles with Resume Button Below */}
         <div className="about-right">
