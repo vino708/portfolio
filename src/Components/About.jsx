@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import { FaCode, FaPaintBrush, FaMobileAlt, FaLaptopCode } from 'react-icons/fa';
 
-
 const About = () => {
   return (
     <section id='about'>
@@ -57,8 +56,6 @@ const About = () => {
           </div>
         </div>
 
-
-
         {/* Right Side - Rotating Circles with Resume Button Below */}
         <div className="about-right">
           <div className="right-inner">
@@ -73,7 +70,13 @@ const About = () => {
             </div>
 
             {/* Resume Download Button Below Circle */}
-            <a href="/Vino_Resume.pdf" download className="resume-btn">
+            <a 
+              href="/Vino_Resume.pdf" 
+              download 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="resume-btn"
+            >
               Download Resume
             </a>
           </div>
