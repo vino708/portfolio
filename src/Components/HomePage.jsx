@@ -5,7 +5,7 @@ import { ReactTyped as Typed } from "react-typed";
 
 import "./Homepage.css";
 import profileImage from "../assets/Vino PNG.png";
-import SplashCursor from "./SplashCursor";
+
 
 
 const backgrounds = ["bg1", "bg2", "bg3"];
@@ -49,7 +49,6 @@ export default function Homepage() {
           <img src={profileImage} alt="Profile" className="profile-image" />
         </div>
       </div>
-      <SplashCursor />
     </section>
   );
 }
