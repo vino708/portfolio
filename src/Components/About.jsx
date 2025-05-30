@@ -3,7 +3,6 @@ import './About.css';
 import { FaCode, FaPaintBrush, FaMobileAlt, FaLaptopCode } from 'react-icons/fa';
 
 const About = () => {
-
   return (
     <section id='about'>
       <div className="about-section">
@@ -70,13 +69,13 @@ const About = () => {
               </div>
             </div>
 
-            {/* Resume View Button Below Circle */}
+            {/* Updated Resume View Button Below Circle */}
             <a 
-              href="/Vino_Resume.pdf" 
+              href={`${process.env.PUBLIC_URL}/Vino_Resume.pdf`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="resume-btn"
-              download
+              download="Vino_Resume.pdf"
             >
               Download Resume
             </a>
