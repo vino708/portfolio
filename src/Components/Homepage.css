@@ -88,7 +88,7 @@ body {
 .animated-text {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #ffffff, orange, #ffffff);
+  background: linear-gradient(90deg, #ffffff, #ff6600, #ffffff);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,9 +126,9 @@ body {
   padding: 12px 30px;
   font-size: 1.2rem;
   font-weight: 600;
-  color: orange;
+   color: #ff6600;
   background: transparent;
-  border: 2px solid orange;
+  border: 2px solid #ff6600;;
   border-radius: 30px;
   cursor: pointer;
   opacity: 0;
@@ -139,7 +139,7 @@ body {
 }
 
 .hire-me-btn:hover {
-  background-color: orange;
+  background-color:#ff6600;
   color: #000;
 }
 

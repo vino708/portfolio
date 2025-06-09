@@ -6,80 +6,60 @@ const About = () => {
   return (
     <section id='about'>
       <div className="about-section">
-        {/* Left Side - Stylish Info Cards */}
-        <div className="about-left w-full md:w-1/2 px-4">
-          <h2 className="text-2xl font-bold mb-2 text-orange-500">About Me</h2>
-          <h3 className="text-lg text-gray-700 mb-4">Frontend Developer</h3>
+        {/* Left Side */}
+        <div className="about-left">
+          <div className="glass-card">
+            <h2 className="section-title">👨‍💻 About Me</h2>
+            <h3 className="section-subtitle">Frontend Developer</h3>
 
-          <div className="info-card custom-card bg-white p-4 md:p-6 rounded-xl shadow-lg space-y-6">
+            <div className="about-info">
+              <div className="block">
+                <h4>🎓 Education</h4>
+                <p><strong>B.E Mechanical Engineering</strong><br />St. Xavier's Catholic College (2018 - 2021)</p>
+                <p><strong>High School</strong><br />Adline Matric Higher Secondary (2016 - 2018)</p>
+              </div>
 
-            {/* Education */}
-            <div>
-              <h4 className="text-lg font-semibold text-orange-500 mb-2">Education</h4>
-              <ul className="text-gray-700 text-sm space-y-1">
-                <li>
-                  <strong>B.E Mechanical Engineering</strong> – St. Xavier's Catholic College of Engineering (2018 - 2021)
-                </li>
-                <li>
-                  <strong>High School</strong> – Adline Matric Higher Secondary School (2016 - 2018)
-                </li>
-              </ul>
-            </div>
+              <div className="block">
+                <h4>💼 Experience</h4>
+                <p><strong>Frontend Developer</strong> – Working (2025 – Present)</p>
+                <ul>
+                  <li>6 months experience with React & Tailwind</li>
+                  <li>Built UI components & responsive pages</li>
+                  <li>Hands-on with resume/contact/project sections</li>
+                </ul>
+              </div>
 
-            {/* Experience */}
-            <div>
-              <br />
-              <h4 className="text-lg font-semibold text-orange-500 mb-2">Experience</h4>
-              <ul className="text-gray-700 text-sm space-y-1">
-                <li><strong>Frontend Developer</strong> – Working (2025 – Present)</li>
-                <li>Gained 6 months of hands-on experience building responsive and interactive user interfaces using React.js and Tailwind CSS.</li>
-                <li>Created landing pages, UI components, and interactive sections like resume, contact forms, and project galleries.</li>
-              </ul>
-            </div>
-
-            {/* Personal Details */}
-            <div>
-              <br />
-              <h4 className="text-lg font-semibold text-orange-500 mb-2">Personal Details</h4>
-              <ul className="text-gray-700 text-sm space-y-1">
-                <li><strong>Name:</strong> Vino</li>
-                <li><strong>Age:</strong> 24</li>
-                <li>
-                  <strong>Address:</strong><br />
+              <div className="block">
+                <h4>📌 Personal Details</h4>
+                <p><strong>Name:</strong> Vino</p>
+                <p><strong>Age:</strong> 24</p>
+                <p><strong>Address:</strong><br />
                   6/100C, Cherrupancodu,<br />
-                  Karankadu (Post),<br />
-                  Kanyakumari District – 629809
-                </li>
-              </ul>
+                  Karankadu, Kanyakumari – 629809
+                </p>
+              </div>
             </div>
-
           </div>
         </div>
 
-        {/* Right Side - Rotating Circles with Resume Button Below */}
+        {/* Right Side */}
         <div className="about-right">
-          <div className="right-inner">
-            <div className="circle-container">
-              <div className="outer-circle">
-                <div className="inner-circle"></div>
-                <div className="icon icon1"><FaCode /></div>
-                <div className="icon icon2"><FaPaintBrush /></div>
-                <div className="icon icon3"><FaMobileAlt /></div>
-                <div className="icon icon4"><FaLaptopCode /></div>
-              </div>
-            </div>
-
-            {/* Updated Resume View Button Below Circle */}
-            <a 
-              href={`${process.env.PUBLIC_URL}/Vino_Resume.pdf`} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="resume-btn"
-              download="Vino_Resume.pdf"
-            >
-              Download Resume
-            </a>
+          <div className="floating-icons">
+            <span className="icon-style icon-code"><FaCode /></span>
+            <span className="icon-style icon-brush"><FaPaintBrush /></span>
+            <span className="icon-style icon-mobile"><FaMobileAlt /></span>
+            <span className="icon-style icon-laptop"><FaLaptopCode /></span>
           </div>
+
+          <a
+            href={`${process.env.PUBLIC_URL}/Vino_Resume.pdf`}
+            download="Vino_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-download"
+          >
+            📄 Download Resume
+          </a>
         </div>
       </div>
     </section>

@@ -60,7 +60,7 @@ function ContactPage() {
       <div className={`contact-wrapper ${loaded ? "show" : ""}`}>
         <div className="contact-card">
           <div className="contact-icon">💫</div>
-          <h1>Contact Me</h1>
+          <h1 className="contact">Contact Me</h1>
 
           {/* Status Message Banner */}
           {showStatus && status && (

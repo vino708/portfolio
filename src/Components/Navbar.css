@@ -43,7 +43,7 @@ body {
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    color: #facc15;
+    color: #ff6600;
 }
 
 .profile-img {
@@ -52,7 +52,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
-    border: 2px solid #facc15;
+    border: 2px solid#ff6600;;
 }
 
 .nav-links {
