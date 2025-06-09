@@ -52,7 +52,7 @@ const About = () => {
           </div>
 
           <a
-            href={`${process.env.PUBLIC_URL}/Vino_Resume.pdf`}
+            href={`${process.env.PUBLIC_URL}/Vino_Resum.pdf`}
             download="Vino_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
