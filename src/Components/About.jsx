@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './About.css';
 import { FaCode, FaPaintBrush, FaMobileAlt, FaLaptopCode } from 'react-icons/fa';
 
 const About = () => {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id='about'>
+    <section id='about' ref={sectionRef}>
       <div className="about-section">
         {/* Left Side */}
-        <div className="about-left">
+        <div className={`about-left ${isVisible ? 'slide-in-left' : ''}`}>
           <div className="glass-card">
             <h2 className="section-title">👨‍💻 About Me</h2>
             <h3 className="section-subtitle">Frontend Developer</h3>
@@ -43,12 +63,14 @@ const About = () => {
         </div>
 
         {/* Right Side */}
-        <div className="about-right">
-          <div className="floating-icons">
-            <span className="icon-style icon-code"><FaCode /></span>
-            <span className="icon-style icon-brush"><FaPaintBrush /></span>
-            <span className="icon-style icon-mobile"><FaMobileAlt /></span>
-            <span className="icon-style icon-laptop"><FaLaptopCode /></span>
+        <div className={`about-right ${isVisible ? 'slide-in-right' : ''}`}>
+          <div className="orbit-container">
+            <div className="orbit">
+              <span className="orbit-icon"><FaCode /></span>
+              <span className="orbit-icon"><FaPaintBrush /></span>
+              <span className="orbit-icon"><FaMobileAlt /></span>
+              <span className="orbit-icon"><FaLaptopCode /></span>
+            </div>
           </div>
 
           <a

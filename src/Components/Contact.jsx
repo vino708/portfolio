@@ -1,15 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Contact.css";
 
 function ContactPage() {
   const [loaded, setLoaded] = useState(false);
+  const sectionRef = useRef(null);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState(null); // success or error message
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showStatus, setShowStatus] = useState(false);
 
   useEffect(() => {
-    setLoaded(true);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoaded(true);
+        } else {
+          setLoaded(false);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
   }, []);
 
   const handleChange = (e) => {
@@ -56,7 +76,7 @@ function ContactPage() {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" ref={sectionRef}>
       <div className={`contact-wrapper ${loaded ? "show" : ""}`}>
         <div className="contact-card">
           <div className="contact-icon">💫</div>
