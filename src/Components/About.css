@@ -178,6 +178,10 @@ body, html {
   transition: opacity 1s ease, transform 1s ease;
 }
 
+.about-right{
+  margin-top: 10%;
+}
+
 .slide-in-left {
   opacity: 1;
   animation: slideLeftIn 1s ease forwards;

@@ -26,7 +26,7 @@ export default function Homepage() {
         <div className="left-content">
           <h1 className="animated-text">
             <Typed
-              strings={["Hello, I am Vino\nFrontend Developer"]}
+              strings={["Hello, I am Vino\nJava FullStack Developer"]}
               typeSpeed={50}
               backSpeed={30}
               backDelay={1500}

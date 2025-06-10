@@ -30,7 +30,7 @@ const About = () => {
         <div className={`about-left ${isVisible ? 'slide-in-left' : ''}`}>
           <div className="glass-card">
             <h2 className="section-title">👨‍💻 About Me</h2>
-            <h3 className="section-subtitle">Frontend Developer</h3>
+            <h3 className="section-subtitle">FullStack Developer</h3>
 
             <div className="about-info">
               <div className="block">
